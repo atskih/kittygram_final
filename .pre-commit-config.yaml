@@ -1,0 +1,13 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.12
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: https://github.com/PyCQA/pycodestyle
+    rev: 2.14.0
+    hooks:
+      - id: pycodestyle
+        args: [--ignore=E501,W503, backend/]
